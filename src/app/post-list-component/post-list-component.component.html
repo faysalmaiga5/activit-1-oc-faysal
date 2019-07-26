@@ -1,0 +1,9 @@
+<li class="list-group-item"  [ngStyle]="{'background-color': getColor()}">
+  <div class="container" >
+    <div> {{titre}}  <p style="text-align:right" > {{created_at | date:'short' }}</p> </div>
+       <p>{{content}}</p>
+       <p>{{loveIts}}</p>
+     <button type="button" class="btn btn-success" (click)="rendre_vert()">Love it</button>
+     <button type="button" class="btn btn-danger" (click)="rendre_rouge()">Don't love it</button>
+  </div>
+</li>
